@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Adicionado para evitar espaços extras no body */
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#corpo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+#topo {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    background-color: rgb(221, 221, 221);
+}
+
+#menu {
+    display: flex;
+    background-color: rgb(247, 247, 247);
+    padding: 10px;
+    gap: 10px; /* Adicionado para espaçamento entre botões */
+    border: 2px solid #000000; /* Corrigido: faltava espessura da borda */
+}
+
+.botao {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    background-color: #fff; /* cor de fundo opcional */
+}
+
+#meio {
+    display: flex;
+    flex: 1;
+    gap: 10px; /* espaçamento entre colunas */
+    padding: 10px 0;
+}
+
+#esquerda {
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 16px;
+}
+
+#centro {
+    flex-grow: 1;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 16px;
+}
+
+#direita {
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 16px;
+}
+
+#rodape {
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid black;
+    border-radius: 16px;
+    text-align: center;
+    line-height: 50px;
+}
