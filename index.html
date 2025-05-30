@@ -1,41 +1,104 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <title>Meu CSS</title>
-    <link rel="stylesheet" href="css/geral.css - code" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasco da Gama - O Gigante da Colina</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <style>
+        /* Estilos específicos para a página inicial */
+        #centro h1 {
+            color: #000;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 3px solid #000;
+            padding-bottom: 10px;
+        }
+        
+        #centro p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .destaque-noticia {
+            background-color: #f8f8f8;
+            border-left: 5px solid #000;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .destaque-noticia h2 {
+            color: #000;
+            margin-top: 0;
+        }
+        
+        .data-atual {
+            font-style: italic;
+            color: #555;
+            text-align: right;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-
     <div id="corpo">
-        <div id="topo">VASCO DA GAMA</div>
+        <div id="topo">
+            <div class="container">
+                <img src="Imagens/escudo-vasco.png" alt="Escudo do Vasco" class="escudo">
+                <h1>CLUB DE REGATAS VASCO DA GAMA</h1>
+            </div>
+        </div>
 
         <div id="menu">
-            <div class="botao" id="botao1">Botão 1</div>
-            <div class="botao" id="botao2">Botão 2</div>
-            <div class="botao" id="botao3">Botão 3</div>
-            <div class="botao" id="botao4">Botão 4</div>
-            <div class="botao" id="botao5">Botão 5</div>
+            <a href="index.html" class="botao active">Home</a>
+            <a href="historia.html" class="botao">História</a>
+            <a href="titulos.html" class="botao">Títulos</a>
+            <a href="idolos.html" class="botao">Ídolos</a>
+            <a href="classicos.html" class="botao">Clássicos</a>
         </div>
 
         <div id="meio">
             <div id="esquerda">
-              <img src="Imagens\20141009-2329-1-.jpg" alt="Terror dos melhores" width="100%" height="100%"> 
+                <img src="Imagens/20141009-2329-1-.jpg" alt="Time do Vasco" class="img-destaque">
             </div>
 
             <div id="centro">
-              <iframe src="https://www.youtube.com/embed/PA6kTi1Zj6M" frameborder="0"width="100%" heigth="1000%"></iframe>frame>
-
+                <h1>O Gigante da Colina</h1>
+                
+                <p>O Club de Regatas Vasco da Gama é uma instituição esportiva brasileira com sede na cidade do Rio de Janeiro, fundada em 21 de agosto de 1898 por um grupo de 63 remadores.</p>
+                
+                <p>Conhecido como "O Gigante da Colina", o Vasco possui uma das torcidas mais apaixonadas do Brasil e uma história repleta de conquistas e glórias, marcada pela luta contra o racismo e a discriminação no esporte.</p>
+                
+                <p>Além do futebol, o clube mantém tradição em esportes como remo, basquete, vôlei e natação, entre outros.</p>
+                
             </div>
+            
             <div id="direita">
-                <img src="Imagens\Philippe-Coutinho.jpg" alt="Maior do Rio" width="100%" height="100%" />
+                <img src="Imagens/sao-januario.jpg" alt="Estádio São Januário" class="img-destaque">
             </div>
         </div>
-
+        
         <div id="rodape">
-            <img src="Imagens\9dcd3d368fae271d5da4db92c70c4796.jpg" alt="Couro e Cacete"width="100%" height="100%">
+            <div class="redes-sociais">
+                <a href="#"><img src="Imagens/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="Imagens/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="Imagens/instagram.png" alt="Instagram"></a>
+            </div>
+            <p>© 2025 Club de Regatas Vasco da Gama - Todos os direitos reservados</p>
         </div>
     </div>
 
+    <script src="js/vasco.js"></script>
+    <script>
+        // Atualiza data automaticamente
+        const data = new Date();
+        const options = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('data-atual').textContent = data.toLocaleDateString('pt-BR', options);
+    </script>
 </body>
 </html>
