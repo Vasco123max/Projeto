@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "nome": "Roberto Dinamite",
+        "foto": "roberto-dinamite.jpg",
+        "descricao": "Maior artilheiro da história do clube",
+        "detalhes": "Carlos Roberto de Oliveira, o Roberto Dinamite, é o maior artilheiro da história do Vasco com 708 gols. Jogou pelo clube entre 1971-1979 e 1980-1993. Campeão brasileiro em 1974 e 9 vezes artilheiro do Campeonato Carioca.",
+        "periodo": "1971-1979, 1980-1993"
+    },
+    {
+        "id": 2,
+        "nome": "Romário",
+        "foto": "romario.jpg",
+        "descricao": "Ídolo da Libertadores de 1998",
+        "detalhes": "Romário de Souza Faria foi peça fundamental no time que chegou à final da Libertadores em 1998. Marcou 346 gols pelo Vasco em várias passagens. Eleito o melhor jogador do mundo em 1994.",
+        "periodo": "1985-1988, 1999-2002, 2005-2006"
+    },
+    {
+        "id": 3,
+        "nome": "Edmundo",
+        "foto": "edmundo.jpg",
+        "descricao": "O Animal do time de 1997",
+        "detalhes": "Edmundo Alves de Souza Neto foi o grande nome do time campeão brasileiro de 1997. Conhecido por seu futebol irreverente e talentoso, marcou época no clube.",
+        "periodo": "1993-1995, 1996-1997, 1999, 2003-2004"
+    },
+    {
+        "id": 4,
+        "nome": "Juninho Pernambucano",
+        "foto": "junior.jpg",
+        "descricao": "Rei das faltas e capitão",
+        "detalhes": "Antônio Augusto Ribeiro Reis Junior, o Juninho Pernambucano, é considerado um dos maiores cobradores de faltas da história. Liderou o meio-campo vascaíno por muitos anos e foi capitão do time.",
+        "periodo": "1995-2001, 2013"
+    }
+]
