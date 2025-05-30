@@ -1,84 +1,164 @@
+/* Reset e Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
-    margin: 0; /* Adicionado para evitar espaços extras no body */
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
+/* Estrutura Principal */
 #corpo {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    border: 3px solid rgb(0, 0, 0);
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
+/* Topo */
 #topo {
-    height: 100px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    line-height: 100px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 16px;
-    background-color: rgb(221, 221, 221);
+    border-bottom: 5px solid #fff;
 }
 
+#topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#topo .escudo {
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+}
+
+#topo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Menu */
 #menu {
     display: flex;
-    background-color: rgb(247, 247, 247);
+    background-color: #000;
     padding: 10px;
-    gap: 10px; /* Adicionado para espaçamento entre botões */
-    border: 2px solid #000000; /* Corrigido: faltava espessura da borda */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 3px solid #fff;
 }
 
 .botao {
-    flex: 1;
-    text-align: center;
-    padding: 15px 0;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
     font-weight: bold;
-    background-color: #fff; /* cor de fundo opcional */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 
+.botao:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.botao.active {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Conteúdo Principal */
 #meio {
     display: flex;
     flex: 1;
-    gap: 10px; /* espaçamento entre colunas */
-    padding: 10px 0;
+    padding: 20px;
+    gap: 20px;
 }
 
-#esquerda {
-    width: 20%;
-    background-color: rgb(0, 0, 0);
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 16px;
+#esquerda, #direita {
+    flex: 1;
+    min-width: 250px;
 }
 
 #centro {
-    flex-grow: 1;
-    background-color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 16px;
+    flex: 2;
+    padding: 20px;
 }
 
-#direita {
-    width: 20%;
-    background-color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 16px;
+.img-destaque {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Rodapé */
 #rodape {
-    height: 50px;
-    background-color: rgb(255, 255, 255);
-    border: 3px solid black;
-    border-radius: 16px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
     text-align: center;
-    line-height: 50px;
+    margin-top: auto;
+}
+
+.redes-sociais {
+    margin-bottom: 15px;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #meio {
+        flex-direction: column;
+    }
+    
+    #topo .container {
+        flex-direction: column;
+    }
+    
+    #topo .escudo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    #topo h1 {
+        font-size: 1.4rem;
+    }
+    
+    .botao {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
 }
